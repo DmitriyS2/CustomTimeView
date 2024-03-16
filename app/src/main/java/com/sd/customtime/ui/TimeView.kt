@@ -1,6 +1,7 @@
 package com.sd.customtime.ui
 
 import android.animation.ValueAnimator
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -62,6 +63,7 @@ class TimeView @JvmOverloads constructor(
     private val dataRad: List<Float> = listOf(0.55f, 0.75f, 0.8f)
 
     var data: List<Double> = emptyList()
+        @SuppressLint("SuspiciousIndentation")
         set(value) {
             field = value
               update()
@@ -123,11 +125,11 @@ class TimeView @JvmOverloads constructor(
         }
              progress = 0F
 
-        valueAnimator = ValueAnimator.ofFloat(0F, 1F).apply {
+        valueAnimator = ValueAnimator.ofFloat(0F, 6F).apply {
             addUpdateListener { anim ->
                      progress = anim.animatedValue as Float
 
-                if (progress==1f) {
+                if (progress==6f) {
                     val dataNew = data as MutableList
                     val amount = (dataNew[0]*3600+dataNew[1]*60+dataNew[2]).toInt() +1
                     val h = (amount/3600)

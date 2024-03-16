@@ -8,21 +8,6 @@
     android:background="@color/colorPrimary"
     tools:context=".ui.MainActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/label"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="bidirectional"-->
-<!--        />-->
-
-<!--    <com.sd.customtime.ui.StatsView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        app:orderOfFilling="sequentially"-->
-<!--        android:id="@+id/stats"-->
-<!--        android:layout_gravity="start|center"-->
-<!--        app:colors="@array/colors"-->
-<!--        />-->
 <com.sd.customtime.ui.TimeView
     android:layout_width="300dp"
     android:layout_height="300dp"
