@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="StatsView">
+    <declare-styleable name="TimeView">
         <attr name="lineWidth" format="dimension|reference" />
-        <attr name="fontSize" format="dimension|reference" />
-        <attr name="colors" format="reference" />
-        <attr name="orderOfFilling" format="enum">
-            <enum name="parallel" value="0"/>
-            <enum name="sequentially" value="1"/>
-            <enum name ="bidirectional" value="2"/>
-        </attr>
+        <attr name="colorHourMin" format="reference" />
+        <attr name="colorSec" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TimePaintView">
+        <attr name="lineWidthPaint" format="dimension|reference" />
+        <attr name="fontSizePaint" format="dimension|reference" />
+        <attr name="colorHourMinPaint" format="reference" />
+        <attr name="colorSecPaint" format="reference" />
+        <attr name="textColorPaint" format="reference" />
+        <attr name="watchColorPaint" format="reference" />
+        <attr name="watchColorEdging" format="reference" />
     </declare-styleable>
 </resources>

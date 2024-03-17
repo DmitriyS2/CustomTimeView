@@ -1,16 +1,15 @@
 package com.sd.customtime
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import java.time.LocalTime
 
 
-class MainViewModel:ViewModel() {
-    private val _timeLiveData: MutableLiveData<List<Double>> = MutableLiveData()
-    val timeLiveData: LiveData<List<Double>>
-        get() = _timeLiveData
+class MainViewModel : ViewModel() {
+    private val dateNow: LocalTime
+        get() = LocalTime.now()
 
-    init {
+    val timeLive: MutableLiveData<LocalTime>
+        get() = MutableLiveData(dateNow)
 
-    }
 }
